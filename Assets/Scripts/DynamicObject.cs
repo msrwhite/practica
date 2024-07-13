@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DynamicObject : MonoBehaviour
+public abstract class DynamicObject : MonoBehaviour
 {
 
 
@@ -97,7 +97,7 @@ public class DynamicObject : MonoBehaviour
         }
     }
 
-    public virtual void InitiateMovePlates() { }
+    public abstract void InitiateMovePlates();
     
 
 

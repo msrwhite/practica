@@ -1,19 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Chessman
+    - Base
     - Game
     - MovePlate
+    - Object1
+    - Object2
+    - WinScreenController
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -55,21 +55,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2098}
+      Script: {instanceID: 17180}
     - Class: 114
-      Script: {instanceID: 2400}
+      Script: {instanceID: 17484}
     - Class: 114
-      Script: {instanceID: 2510}
+      Script: {instanceID: 17594}
     - Class: 114
-      Script: {instanceID: 2560}
+      Script: {instanceID: 17644}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 17764}
     - Class: 114
-      Script: {instanceID: 2860}
+      Script: {instanceID: 17782}
     - Class: 114
-      Script: {instanceID: 3110}
+      Script: {instanceID: 17946}
     - Class: 114
-      Script: {instanceID: 4188}
+      Script: {instanceID: 18052}
+    - Class: 114
+      Script: {instanceID: 18364}
+    - Class: 114
+      Script: {instanceID: 19278}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -89,6 +93,64 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/WinScreenBlue.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17366}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/WinScreenRed.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17366}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -165,12 +227,6 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 351f275515398e10986dfe5b3946f666
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: NewBehaviourScript
-  - hash:
-      serializedVersion: 2
       Hash: 061a5d77ce0aa52a60c21c566c6d8af2
     assemblyName: Unity.AI.Navigation
     namespaceName: Unity.AI.Navigation
@@ -219,6 +275,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 3a85dd4c47ad52acade3d0f7bd23ed58
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WinScreenController
+  - hash:
+      serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -261,7 +323,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 6ad0785d6b0b1b1067f1ea4e2ece074f
+      Hash: c6d466241abfd9d36c3afba63ba416ec
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Game
@@ -277,6 +339,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: ca0272c68de0c60cc82af631d3fe6766
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Object1
   - hash:
       serializedVersion: 2
       Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
@@ -351,16 +419,16 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 939e4916a6ec4b3735322a9390814ced
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Object2
+  - hash:
+      serializedVersion: 2
       Hash: 8bbce9932f67ad8e7f4eefec87800f94
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: c1d3617f079214b983746cf89b3b842e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Chessman
   - hash:
       serializedVersion: 2
       Hash: d41ab9b5ea92474f9c0a6937a0607ce1
@@ -397,6 +465,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 10172b30b858581e9dd6d9a1e446a636
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Base
   - hash:
       serializedVersion: 2
       Hash: 7bb32d6e4c7614a97d9723ce7e26588c
@@ -543,7 +617,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 71f42c058f921e7811eeff43559d9f31
+      Hash: e9bc07e0786f5d3e88b0897cb906d9b3
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MovePlate
@@ -580,5 +654,6 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Game.unity
-  playerPath: "G:/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (3)/\u041D\u043E\u0432\u0430\u044F
-    \u043F\u0430\u043F\u043A\u0430/Chess_App_ADC.exe"
+  - Assets/Scenes/WinScreenBlue.unity
+  - Assets/Scenes/WinScreenRed.unity
+  playerPath: H:/!cursoop/Red VS Blue.exe

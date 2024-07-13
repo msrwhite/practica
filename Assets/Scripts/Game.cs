@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,8 +7,8 @@ using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
+
    
-    public GameObject chesspiece;
     public GameObject obj1;
     public GameObject obj2;
     public GameObject base1;
@@ -123,17 +124,7 @@ public class Game : MonoBehaviour
         }
     }
 
-    public void Update()
-    {
-        if (gameOver == true && Input.GetMouseButtonDown(0))
-        {
-            gameOver = false;
-
-            
-            SceneManager.LoadScene("Game"); 
-        }
-    }
-    
+        
     public void Winner(string playerWinner)
     {
         gameOver = true;
@@ -142,18 +133,28 @@ public class Game : MonoBehaviour
         {
             Base baseComponent = base1.GetComponent<Base>();
             baseComponent.SetBaseSprite(false);
-          
+            Invoke("LoadWinScreenRed", 0.5f);
+
         } else
         {
             Base baseComponent = base2.GetComponent<Base>();
             baseComponent.SetBaseSprite(false);
+            Invoke("LoadWinScreenBlue", 0.5f);
         }
-            
-        
-        
-        GameObject.FindGameObjectWithTag("WinnerText").GetComponent<Text>().enabled = true;
-        GameObject.FindGameObjectWithTag("WinnerText").GetComponent<Text>().text = playerWinner + " wins!";
 
-        GameObject.FindGameObjectWithTag("RestartText").GetComponent<Text>().enabled = true;
+
+        
+        
+        
+ 
+    }
+    void LoadWinScreenRed()
+    {
+        SceneManager.LoadScene("WinScreenRed");
+    }
+
+    void LoadWinScreenBlue()
+    {
+        SceneManager.LoadScene("WinScreenBlue");
     }
 }

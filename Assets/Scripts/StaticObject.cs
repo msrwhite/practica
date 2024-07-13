@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StaticObject : MonoBehaviour
+public abstract class StaticObject : MonoBehaviour
 {
     
     public GameObject controller;
-
+    public GameObject reference = null;
     public int matrixX;
     public int matrixY;
 
@@ -18,5 +18,13 @@ public class StaticObject : MonoBehaviour
         matrixY = y;
     }
 
-    
+    public void SetReference(GameObject obj)
+    {
+        reference = obj;
+    }
+
+    public GameObject GetReference()
+    {
+        return reference;
+    }
 }

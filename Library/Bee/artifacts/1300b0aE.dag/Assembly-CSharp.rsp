@@ -353,6 +353,7 @@
 "Assets/Scripts/Object1.cs"
 "Assets/Scripts/Object2.cs"
 "Assets/Scripts/StaticObject.cs"
+"Assets/Scripts/WinScreenController.cs"
 -langversion:9.0
 
 /deterministic

@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\DynamicObject.cs" />
     <Compile Include="Assets\Scripts\Base.cs" />
     <Compile Include="Assets\Scripts\StaticObject.cs" />
+    <Compile Include="Assets\Scripts\WinScreenController.cs" />
     <Compile Include="Assets\Scripts\Object2.cs" />
     <Compile Include="Assets\Scripts\MovePlate.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />

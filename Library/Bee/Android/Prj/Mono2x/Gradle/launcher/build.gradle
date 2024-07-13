@@ -18,12 +18,12 @@ android {
     defaultConfig {
         minSdkVersion 28
         targetSdkVersion 32
-        applicationId 'com.XD.comars'
+        applicationId 'com.XD.cursach'
         ndk {
             abiFilters 'armeabi-v7a'
         }
         versionCode 1
-        versionName '0.2'
+        versionName '0.4'
     }
 
     aaptOptions {

@@ -6,16 +6,12 @@ ScriptsOnlyBuild:
     - MovePlate
     - Object1
     - Object2
+    - WinScreenController
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    - UnityEditor.Tilemaps.TilemapEditorToolPreferences
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -59,23 +55,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17180}
     - Class: 114
-      Script: {instanceID: 17482}
+      Script: {instanceID: 17484}
     - Class: 114
-      Script: {instanceID: 17592}
+      Script: {instanceID: 17594}
     - Class: 114
-      Script: {instanceID: 17642}
+      Script: {instanceID: 17644}
     - Class: 114
-      Script: {instanceID: 17762}
+      Script: {instanceID: 17764}
     - Class: 114
-      Script: {instanceID: 17780}
+      Script: {instanceID: 17782}
     - Class: 114
-      Script: {instanceID: 17944}
+      Script: {instanceID: 17946}
     - Class: 114
-      Script: {instanceID: 18050}
+      Script: {instanceID: 18052}
     - Class: 114
-      Script: {instanceID: 18362}
+      Script: {instanceID: 18364}
     - Class: 114
-      Script: {instanceID: 19276}
+      Script: {instanceID: 19278}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -95,6 +91,64 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/WinScreenBlue.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17366}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/WinScreenRed.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17366}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -151,12 +205,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Slider
-  - hash:
-      serializedVersion: 2
-      Hash: a5f4f306ca4903647a2908f1704d2874
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: StaticObject
   - hash:
       serializedVersion: 2
       Hash: 33f160a5c07e580c29aba2bd1e4db811
@@ -225,6 +273,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 3a85dd4c47ad52acade3d0f7bd23ed58
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WinScreenController
+  - hash:
+      serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -267,7 +321,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 54dff2f5e6de29c9c516e302fd0ad267
+      Hash: c6d466241abfd9d36c3afba63ba416ec
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Game
@@ -411,7 +465,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 27912d41bedd4ef164208b0542e6a3d7
+      Hash: 10172b30b858581e9dd6d9a1e446a636
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Base
@@ -519,12 +573,6 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: d1abef55aa04e463777c5d55a028798a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DynamicObject
-  - hash:
-      serializedVersion: 2
       Hash: 7053e305cdc1eb560f4c3be49d3b5136
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -567,7 +615,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 4e4bb2764a124115fee82aeffdf9bf5e
+      Hash: e9bc07e0786f5d3e88b0897cb906d9b3
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MovePlate
@@ -604,4 +652,6 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Game.unity
-  playerPath: G:/gam/xd2.apk
+  - Assets/Scenes/WinScreenBlue.unity
+  - Assets/Scenes/WinScreenRed.unity
+  playerPath: G:/gam/final.apk

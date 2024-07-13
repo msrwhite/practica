@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovePlate : StaticObject
 {
-    public GameObject reference = null;
+    
    
     public bool attack = false;
 
@@ -40,14 +40,19 @@ public class MovePlate : StaticObject
             if (referenceDynamic.ObjWeight == 1 && cpDynamic.ObjWeight == 2)
             {
                
-                cpDynamic.ObjWeight = 1;
+                cpDynamic.ObjWeight -= 1;
 
-               
+           
                 Destroy(reference);
             }
+          
             else if (referenceDynamic.ObjWeight >= cpDynamic.ObjWeight)
             {
             
+                if (referenceDynamic.ObjWeight == 2)
+                {
+                    referenceDynamic.ObjWeight += 1;
+                }
                 Destroy(cp);
                 controller.GetComponent<Game>().SetPositionEmpty(referenceDynamic.GetXBoard(), referenceDynamic.GetYBoard());
 
@@ -88,13 +93,5 @@ public class MovePlate : StaticObject
       
         reference.GetComponent<DynamicObject>().DestroyMovePlates();
     }
-    public void SetReference(GameObject obj)
-    {
-        reference = obj;
-    }
-
-    public GameObject GetReference()
-    {
-        return reference;
-    }
+   
 }
